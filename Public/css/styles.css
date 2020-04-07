@@ -1,0 +1,247 @@
+body {
+    background-color: #7a7a7a;
+}
+
+button {
+    height: 75px;
+    width: 150px;
+}
+
+div {
+    text-align: center;
+}
+
+p{
+    width: 700px;
+}
+
+.Answer1 {
+    background-color: yellow;
+}
+
+.Answer2 {
+    background-color: green;
+}
+
+.Answer3 {
+    background-color: royalblue;
+}
+
+.Answer4 {
+    background-color: red;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./images/Quizzical.jpg");
+    background-repeat: repeat;
+}
+
+#Question1 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#Question2 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question3 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question4 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question5 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question6 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question7 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question8 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question9 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question10 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question11 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question12 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question13 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question14 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question15 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question16 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question17 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question18 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question19 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Question20 {
+    background-color: lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
