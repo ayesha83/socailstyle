@@ -1,5 +1,5 @@
 const ANALYTICAL = "analytical";
-const AMIABLE = "emiable";
+const AMIABLE = "amiable";
 const EXPRESSIVE = "expressive";
 const DRIVER = "driver";
 
@@ -26,7 +26,7 @@ var questions = [
     ]
   },
   {
-    optoions: [        // 3
+    options: [        // 3
       { 'a': AMIABLE },
       { 'b': DRIVER },
       { 'c': ANALYTICAL},
@@ -103,7 +103,7 @@ var questions = [
       { 'a': AMIABLE},
       { 'b': DRIVER},
       { 'c': EXPRESSIVE},
-      { 'D': ANALYTICA}
+      { 'D': ANALYTICAL}
     ]
   },
     {
@@ -175,7 +175,7 @@ var questions = [
 
 let answer = (questionID, selectedOption) => {
     // get options for selected question 
-    var questionNoIndex = questionID -1;
+    var questionNoIndex = questionID - 1;
     var options = questions[questionNoIndex].options;
 
   for (let i = 0; i < options.length; i++) {
