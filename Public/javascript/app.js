@@ -10,7 +10,7 @@ let expressiveCount = 0;
 
 var questions = [
   {
-    options: [
+    options: [         //1
       { 'a': DRIVER }, // Key Value
       { 'b': AMIABLE },
       { 'c': ANALYTICAL },
@@ -18,11 +18,156 @@ var questions = [
     ]
   },
   {
-    options: [
+    options: [        //2
       { 'a': ANALYTICAL }, 
       { 'b': EXPRESSIVE },
       { 'c': DRIVER },
       { 'd': AMIABLE }
+    ]
+  },
+  {
+    optoions: [        // 3
+      { 'a': AMIABLE },
+      { 'b': DRIVER },
+      { 'c': ANALYTICAL},
+      { 'd': EXPRESSIVE}
+    ]
+  },
+  {
+    options: [         //4
+      { 'a': EXPRESSIVE },
+      { 'b': AMIABLE },
+      { 'c': DRIVER },
+      { 'd': ANALYTICAL }
+    ]
+  },
+  {
+    options: [        //5
+        { 'a':  AMIABLE },
+        { 'b': EXPRESSIVE },
+        { 'c': ANALYTICAL },
+        { 'd': DRIVER }
+    ]
+  },
+  {
+    options: [       //6
+      { 'a': AMIABLE },
+      { 'b': EXPRESSIVE },
+      { 'c': DRIVER },
+      { 'd': ANALYTICAL }
+    ]
+  },
+  {
+    options: [     //7
+      { 'a': AMIABLE },
+      { 'b': DRIVER },
+      { 'c': ANALYTICAL },
+      { 'd': EXPRESSIVE }
+    ]
+  },
+  {
+    options: [     //8
+      { 'a': DRIVER },
+      { 'b': AMIABLE },
+      { 'c': EXPRESSIVE },
+      { 'd': ANALYTICAL }
+    ]
+  },
+  {
+    options: [       //9
+      { 'a': EXPRESSIVE },
+      { 'b': AMIABLE },
+      { 'c': ANALYTICAL },
+      { 'd': EXPRESSIVE }
+    ]
+  },
+  {
+    options: [       //10
+      { 'a': DRIVER },
+      { 'b': AMIABLE },
+      { 'c': ANALYTICAL },
+      { 'd': EXPRESSIVE }
+    ]
+  },
+  
+  {
+    options: [       //11
+      { 'a': ANALYTICAL},
+      { 'b': AMIABLE},
+      { 'c': EXPRESSIVE},
+      { 'D': DRIVER}
+    ]
+  },
+  {
+    options: [         //12
+      { 'a': AMIABLE},
+      { 'b': DRIVER},
+      { 'c': EXPRESSIVE},
+      { 'D': ANALYTICA}
+    ]
+  },
+    {
+    options: [         //13
+      { 'a': AMIABLE},
+      { 'b': DRIVER},
+      { 'c': ANALYTICAL},
+      { 'D': EXPRESSIVE}
+    ]
+  },
+    {
+    options: [          //14
+      { 'a': DRIVER},
+      { 'b': AMIABLE},
+      { 'c': EXPRESSIVE},
+      { 'D': ANALYTICAL}
+    ]
+  },
+    {
+    options: [         //15
+      { 'a': DRIVER},
+      { 'b': AMIABLE},
+      { 'c': EXPRESSIVE},
+      { 'D': ANALYTICAL}
+    ]
+  },
+    {
+    options: [         //16
+      { 'a': EXPRESSIVE},
+      { 'b': AMIABLE},
+      { 'c': DRIVER},
+      { 'D': ANALYTICAL}
+    ]
+  },
+    {
+    options: [          //17
+      { 'a': EXPRESSIVE},
+      { 'b': DRIVER},
+      { 'c': AMIABLE},
+      { 'D': ANALYTICAL}
+    ]
+  },
+    {
+    options: [         //18
+      { 'a': ANALYTICAL},
+      { 'b': EXPRESSIVE},
+      { 'c': DRIVER},
+      { 'D': AMIABLE}
+    ]
+  },
+    {
+    options: [         //19
+      { 'a': EXPRESSIVE},
+      { 'b': ANALYTICAL},
+      { 'c': DRIVER},
+      { 'D': AMIABLE}
+    ]
+  },
+      {
+    options: [         //20
+      { 'a': DRIVER},
+      { 'b': AMIABLE},
+      { 'c': EXPRESSIVE},
+      { 'D': ANALYTICAL}
     ]
   }
 ];

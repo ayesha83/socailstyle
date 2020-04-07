@@ -1,3 +1,7 @@
+/* font-family: 'Slabo 27px', serif; */
+/* font-family: 'Crimson Pro', serif; */
+
+
 body {
     background-color: #7a7a7a;
 }
@@ -16,7 +20,7 @@ p{
 }
 
 .Answer1 {
-    background-color: yellow;
+    background-color: goldenrod;
 }
 
 .Answer2 {
@@ -28,7 +32,7 @@ p{
 }
 
 .Answer4 {
-    background-color: red;
+    background-color: darkred ;
 }
 
 .body {

@@ -5,6 +5,9 @@
     <title>Social Styles Questionnaire</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="javascript/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Pro|Slabo+27px&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="body">
@@ -72,12 +75,12 @@
                 <p></p>
             </div>
             <div class="Answers">
-                <button class="Answer1"></button>
-                <button class="Answer2"></button>
+                <button onclick="answer(4,'a')" class="Answer1"></button>
+                <button onclick="answer(4,'b')" class="Answer2"></button>
             </div>
             <div class="Answers">
-                <button class="Answer3"></button>
-                <button class="Answer4"></button>
+                <button onclick="answer(4,'c')" class="Answer3"></button>
+                <button onclick="answer(4,'d')" class="Answer4"></button>
             </div>
             <br>
         </div>
@@ -89,12 +92,12 @@
                 <p></p>
             </div>
             <div class="Answers">
-                <button class="Answer1"></button>
-                <button class="Answer2"></button>
+                <button onclick="answer(5,'a')" class="Answer1"></button>
+                <button onclick="answer(5,'b')" class="Answer2"></button>
             </div>
             <div class="Answers">
-                <button class="Answer3"></button>
-                <button class="Answer4"></button>
+                <button onclick="answer(5,'c')" class="Answer3"></button>
+                <button onclick="answer(5,'d')" class="Answer4"></button>
             </div>
             <br>
         </div>
@@ -106,12 +109,12 @@
                 <p></p>
             </div>
             <div class="Answers">
-                <button class="Answer1"></button>
-                <button class="Answer2"></button>
+                <button onclick="answer(6,'a')" class="Answer1"></button>
+                <button onclick="answer(6,'b')" class="Answer2"></button>
             </div>
             <div class="Answers">
-                <button class="Answer3"></button>
-                <button class="Answer4"></button>
+                <button onclick="answer(6,'c')" class="Answer3"></button>
+                <button onclick="answer(6,'d')" class="Answer4"></button>
             </div>
             <br>
         </div>
@@ -123,12 +126,12 @@
                 <p></p>
             </div>
             <div class="Answers">
-                <button class="Answer1"></button>
-                <button class="Answer2"></button>
+                <button onclick="answer(7,'a')" class="Answer1"></button>
+                <button onclick="answer(7,'b')" class="Answer2"></button>
             </div>
             <div class="Answers">
-                <button class="Answer3"></button>
-                <button class="Answer4"></button>
+                <button onclick="answer(7,'c')" class="Answer3"></button>
+                <button onclick="answer(7,'d')" class="Answer4"></button>
             </div>
             <br>
         </div>
@@ -140,12 +143,12 @@
                 <p></p>
             </div>
             <div class="Answers">
-                <button class="Answer1"></button>
-                <button class="Answer2"></button>
+                <button onclick="answer(8,'a')" class="Answer1"></button>
+                <button onclick="answer(8,'b')" class="Answer2"></button>
             </div>
             <div class="Answers">
-                <button class="Answer3"></button>
-                <button class="Answer4"></button>
+                <button onclick="answer(8,'c')" class="Answer3"></button>
+                <button onclick="answer(8,'d')" class="Answer4"></button>
             </div>
             <br>
         </div>
@@ -157,12 +160,12 @@
                 <p></p>
             </div>
             <div class="Answers">
-                <button class="Answer1"></button>
-                <button class="Answer2"></button>
+                <button onclick="answer(9,'a')" class="Answer1"></button>
+                <button onclick="answer(9,'b')" class="Answer2"></button>
             </div>
             <div class="Answers">
-                <button class="Answer3"></button>
-                <button class="Answer4"></button>
+                <button onclick="answer(9,'c')" class="Answer3"></button>
+                <button onclick="answer(9,'d')" class="Answer4"></button>
             </div>
             <br>
         </div>
@@ -174,12 +177,12 @@
                 <p></p>
             </div>
             <div class="Answers">
-                <button class="Answer1"></button>
-                <button class="Answer2"></button>
+                <button onclick="answer(10,'a')" class="Answer1"></button>
+                <button onclick="answer(10,'b')" class="Answer2"></button>
             </div>
             <div class="Answers">
-                <button class="Answer3"></button>
-                <button class="Answer4"></button>
+                <button onclick="answer(10,'c')" class="Answer3"></button>
+                <button onclick="answer(10,'d')" class="Answer4"></button>
             </div>
             <br>
         </div>
@@ -355,10 +358,12 @@
     </div>
     <div>
         <h2>Results:</h2>
-        <div>ANALYTICAL count : <h2 id="analytical-count"></h2></div>
-        <div>AMIABLE : <h2 id="amiable-count"></h2></div>  
-        <div>EXPRESSIVE : <h2 id="expressive-count"></h2></div> 
-        <div>Driver : <h2 id="driver-count"></h2></div>         
+        <ul>
+        <li></li>Analytical : <h2 id="analytical-count"></h2></li>
+        <li>Amiable : <h2 id="amiable-count"></h2></div>  
+        <li>Expressive : <h2 id="expressive-count"></h2></li> 
+        <li>Driver : <h2 id="driver-count"></h2></li>
+        </ul>         
     </div>
 </body>
 </html>
