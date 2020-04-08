@@ -15,24 +15,56 @@ div {
     text-align: center;
 }
 
+h1{
+    font-family: 'Slabo 27px', serif; 
+}
+
+h2{
+    font-family: 'Slabo 27px', serif; 
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-decoration: none;
+    font-family: 'Crimson Pro', serif; 
+}
+
 p{
     width: 700px;
+    font-family: 'Crimson Pro', serif;
+}
+
+.amiableOutput{
+    background-color: goldenrod;
+    font-family: 'Crimson Pro', serif;
+    font
 }
 
 .Answer1 {
     background-color: goldenrod;
+    font-family: 'Crimson Pro', serif;
 }
 
 .Answer2 {
     background-color: green;
+    font-family: 'Crimson Pro', serif;
 }
 
 .Answer3 {
     background-color: royalblue;
+    font-family: 'Crimson Pro', serif;
 }
 
 .Answer4 {
     background-color: darkred ;
+    font-family: 'Crimson Pro', serif;
+}
+
+.analyticalOutput{
+    background-color: green;
+    font-family: 'Crimson Pro', serif;
 }
 
 .body {
@@ -41,12 +73,20 @@ p{
     align-items: center;
 }
 
+.driverOutput{
+    background-color: royalblue;
+    font-family: 'Crimson Pro', serif;
+}
+
+.expressiveOutput{
+    background-color: darkred;
+    font-family: 'Crimson Pro', serif;
+}
+
 #Questions {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url("./images/Quizzical.jpg"); */
-    /* background-repeat: repeat; */
 }
 
 #Question1 {

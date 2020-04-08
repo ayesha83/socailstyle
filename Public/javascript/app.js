@@ -8,6 +8,8 @@ let analyticalCount = 0;
 let amiableCount = 0;
 let expressiveCount = 0;
 
+let selectedAnswers;
+
 var questions = [
   {
     options: [         //1
