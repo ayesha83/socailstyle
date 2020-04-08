@@ -1,8 +1,10 @@
+// Setting constant values
 const ANALYTICAL = "analytical";
 const AMIABLE = "amiable";
 const EXPRESSIVE = "expressive";
 const DRIVER = "driver";
 
+// Initilizing counts to zero
 let driverCount = 0;
 let analyticalCount = 0;
 let amiableCount = 0;
@@ -10,6 +12,7 @@ let expressiveCount = 0;
 
 let selectedAnswers;
 
+// Setting array for question options
 var questions = [
   {
     options: [         //1
@@ -174,12 +177,13 @@ var questions = [
   }
 ];
 
-
+// answer() function from user input
 let answer = (questionID, selectedOption) => {
     // get options for selected question 
     var questionNoIndex = questionID - 1;
     var options = questions[questionNoIndex].options;
 
+// Iteration for the options option
   for (let i = 0; i < options.length; i++) {
     if (options[i][selectedOption]) {     
       handleAnswer(options[i][selectedOption])
@@ -187,6 +191,7 @@ let answer = (questionID, selectedOption) => {
   }
 };
 
+// Adding counts 
 let handleAnswer = (answer) => {
   switch (answer) {
     case ANALYTICAL:
@@ -208,6 +213,7 @@ let handleAnswer = (answer) => {
   updateResult();
 };
 
+// Display result 
 let updateResult = () => {
  document.getElementById("analytical-count").innerText = analyticalCount;
  document.getElementById("amiable-count").innerText =  amiableCount;
