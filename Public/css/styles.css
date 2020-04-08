@@ -3,13 +3,35 @@
 
 
 body {
+    margin-top: 20px;;
     background-color: #7a7a7a;
+    background-image: url(../images/header.jpg);
 }
 
 button {
     height: 75px;
     width: 150px;
+    font-size: 25px;
+    color: black;
+    font-weight: 50px;
+    font-family: 'Slabo 27px', serif; 
+    opacity:1;
+    transition: 0.3s;
 }
+
+button:active {
+    background-color: darkcyan;    
+    border: 2px;
+    border-color: seagreen;
+}
+
+button:hover {opacity: 0.6}
+
+.selected-option { 
+    opacity: 0.6;
+}
+
+
 
 div {
     text-align: center;
@@ -34,32 +56,37 @@ li{
 p{
     width: 700px;
     font-family: 'Crimson Pro', serif;
+    font-size: 17px;
 }
 
 .amiableOutput{
     background-color: goldenrod;
     font-family: 'Crimson Pro', serif;
-    font
+    font-size: 15px;
 }
 
 .Answer1 {
     background-color: goldenrod;
     font-family: 'Crimson Pro', serif;
+    font-size: 15px;
 }
 
 .Answer2 {
     background-color: green;
     font-family: 'Crimson Pro', serif;
+    font-size: 15px;
 }
 
 .Answer3 {
     background-color: royalblue;
     font-family: 'Crimson Pro', serif;
+    font-size: 15px;
 }
 
 .Answer4 {
     background-color: darkred ;
     font-family: 'Crimson Pro', serif;
+    font-size: 15px;
 }
 
 .analyticalOutput{
@@ -83,7 +110,13 @@ p{
     font-family: 'Crimson Pro', serif;
 }
 
+.questionbody{
+        background-image: url(../images/questionnairebg.jpg);
+    background-repeat: repeat;
+}
+
 #Questions {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;

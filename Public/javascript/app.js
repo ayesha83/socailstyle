@@ -10,7 +10,7 @@ let analyticalCount = 0;
 let amiableCount = 0;
 let expressiveCount = 0;
 
-let selectedAnswers;
+let selectedAnswers={};
 
 // Setting array for question options
 var questions = [
@@ -100,7 +100,7 @@ var questions = [
       { 'a': ANALYTICAL},
       { 'b': AMIABLE},
       { 'c': EXPRESSIVE},
-      { 'D': DRIVER}
+      { 'd': DRIVER}
     ]
   },
   {
@@ -108,7 +108,7 @@ var questions = [
       { 'a': AMIABLE},
       { 'b': DRIVER},
       { 'c': EXPRESSIVE},
-      { 'D': ANALYTICAL}
+      { 'd': ANALYTICAL}
     ]
   },
     {
@@ -116,7 +116,7 @@ var questions = [
       { 'a': AMIABLE},
       { 'b': DRIVER},
       { 'c': ANALYTICAL},
-      { 'D': EXPRESSIVE}
+      { 'd': EXPRESSIVE}
     ]
   },
     {
@@ -124,7 +124,7 @@ var questions = [
       { 'a': DRIVER},
       { 'b': AMIABLE},
       { 'c': EXPRESSIVE},
-      { 'D': ANALYTICAL}
+      { 'd': ANALYTICAL}
     ]
   },
     {
@@ -132,7 +132,7 @@ var questions = [
       { 'a': DRIVER},
       { 'b': AMIABLE},
       { 'c': EXPRESSIVE},
-      { 'D': ANALYTICAL}
+      { 'd': ANALYTICAL}
     ]
   },
     {
@@ -140,7 +140,7 @@ var questions = [
       { 'a': EXPRESSIVE},
       { 'b': AMIABLE},
       { 'c': DRIVER},
-      { 'D': ANALYTICAL}
+      { 'd': ANALYTICAL}
     ]
   },
     {
@@ -148,7 +148,7 @@ var questions = [
       { 'a': EXPRESSIVE},
       { 'b': DRIVER},
       { 'c': AMIABLE},
-      { 'D': ANALYTICAL}
+      { 'd': ANALYTICAL}
     ]
   },
     {
@@ -156,7 +156,7 @@ var questions = [
       { 'a': ANALYTICAL},
       { 'b': EXPRESSIVE},
       { 'c': DRIVER},
-      { 'D': AMIABLE}
+      { 'd': AMIABLE}
     ]
   },
     {
@@ -164,7 +164,7 @@ var questions = [
       { 'a': EXPRESSIVE},
       { 'b': ANALYTICAL},
       { 'c': DRIVER},
-      { 'D': AMIABLE}
+      { 'd': AMIABLE}
     ]
   },
       {
@@ -172,52 +172,65 @@ var questions = [
       { 'a': DRIVER},
       { 'b': AMIABLE},
       { 'c': EXPRESSIVE},
-      { 'D': ANALYTICAL}
+      { 'd': ANALYTICAL}
     ]
   }
 ];
 
 // answer() function from user input
-let answer = (questionID, selectedOption) => {
-    // get options for selected question 
-    var questionNoIndex = questionID - 1;
-    var options = questions[questionNoIndex].options;
+let answer = ( questionID, selectedOption) => {
+  // get options for selected question 
+  var questionNoIndex = questionID - 1;
+  var options = questions[questionNoIndex].options;
 
 // Iteration for the options option
   for (let i = 0; i < options.length; i++) {
     if (options[i][selectedOption]) {     
-      handleAnswer(options[i][selectedOption])
+      handleAnswer(questionID, options[i][selectedOption])
     }
   }
 };
 
 // Adding counts 
-let handleAnswer = (answer) => {
-  switch (answer) {
-    case ANALYTICAL:
-      analyticalCount = analyticalCount + 1;
-      break;
+let handleAnswer = (questionID,answer) => {
+  // Adding answers into dictionary
+  selectedAnswers[questionID]= answer;
+  analyticalCount = 0;
+  expressiveCount =0;
+  driverCount = 0;
+  amiableCount = 0;
 
-    case EXPRESSIVE:
-      expressiveCount = expressiveCount + 1;
-      break;
-
-    case DRIVER:
-      driverCount = driverCount + 1;
-      break;
-
-    case AMIABLE:
-      amiableCount = amiableCount + 1;
-      break;
+  // Checking for more than one clicks
+  for(var key in selectedAnswers){
+    let opt = selectedAnswers[key];
+    console.log(opt);
+    switch (opt) {
+      case ANALYTICAL:
+        analyticalCount = analyticalCount + 1;
+        break;
+  
+      case EXPRESSIVE:
+        expressiveCount = expressiveCount + 1;
+        break;
+  
+      case DRIVER:
+        driverCount = driverCount + 1;
+        break;
+  
+      case AMIABLE:
+        amiableCount = amiableCount + 1;
+        break;
+      default:
+        break;
+    }
   }
   updateResult();
 };
 
 // Display result 
-let updateResult = () => {
+let updateResult = () => { 
  document.getElementById("analytical-count").innerText = analyticalCount;
  document.getElementById("amiable-count").innerText =  amiableCount;
  document.getElementById("expressive-count").innerText = expressiveCount;
  document.getElementById("driver-count").innerText = driverCount;
-
 };
